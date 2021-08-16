@@ -1,1 +1,12 @@
-# tampermonkey-script
+# tampermonkey-script-files
+
+本项目下所有文件都是我在一个油猴脚本发布网站发布的脚本。被恶意举报导致封号，将文件存放在此
+
+- qinshu.js    青书学堂刷视频脚本
+- pufei.js    扑飞漫画改下拉式浏览
+- 未完待续.....
+
+使用方法，谷歌商店搜索tampermonkey，下载黑的那个
+
+点到插件图标，管理面板，第二栏，加号文件内容复制进去就行
+
