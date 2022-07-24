@@ -156,4 +156,21 @@
       // setInterval(()=>{
       //   window.timeSpend = timeSpend;
       // },1000)
+    
+    // 屏蔽无法粘贴
+    if (CKEDITOR){
+        setTimeout(()=>{
+            let keys = Object.keys(CKEDITOR.instances)
+            for (let i = 0; i < keys.length; i++) {
+                CKEDITOR.instances[keys[i]].destroy();
+
+                CKEDITOR.replace(keys[i], {
+                    uploadUrl: 'https://www.qingshuxuetang.com/Svc/UploadImg',
+                    filebrowserUploadUrl: 'https://www.qingshuxuetang.com/Svc/UploadFile',
+                    customConfig: 'config.cust.question.js',
+                    height: 80
+                });
+            }
+        },5000)
+    }
 })();
